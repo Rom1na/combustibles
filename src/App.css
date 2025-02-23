@@ -1,0 +1,61 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.contenedor{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+
+}
+
+.sel{
+  font-family: inherit;
+  border-radius: 8px;
+}
+
+
+.porLocalidad{
+ 
+/*   box-shadow: 5px 10px 8px #888888; */
+  border-radius: 8px;
+  margin-top: 15px;
+  padding: 8px;
+  width: 500px;
+
+}
+.contenedor2{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+
+.parrafo{
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  margin: 50px;
+
+}
+
+footer{
+  font-size:10px;
+  color: #fdd306;
+  width: 100%;
+  margin: 0px;
+  position: fixed;
+  bottom: 0;
+  background-color: black;
+  
+
+}

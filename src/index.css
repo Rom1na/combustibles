@@ -1,0 +1,175 @@
+:root {
+  font-family: "Quicksand";
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: white;
+  
+}
+
+
+
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  overflow-x: hidden;
+ 
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  color: #fdd306;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 5px;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  min-width: 100vw;
+  padding: 10px;
+  gap: 15px;
+  flex-wrap: nowrap;
+  background-color:white;
+  color: black;
+  /* box-shadow: 2px 2px 5px hsla(0, 0%,0%, 0.8); */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.tituloppal{
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  background-color: #fdd306;
+  border-radius: 10px;
+  padding: 5px;
+  /* text-shadow: #fdd306 1px 0 10px; */
+  float: left;
+}
+.tituloppal a{
+  text-decoration: none;
+  color: var(--bgGeneral);
+}
+
+nav ul {
+  list-style: none;
+  display: flex; /* Flexbox para alinear horizontalmente los <li> */
+  gap: 15px;    /* Espacio entre los <li> */
+  padding: 0;
+  margin: 0;
+}
+
+nav p{
+
+  color:var(--bgGeneral);
+  text-decoration: none;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+      
+}
+
+.dropdown a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.dropdown p {
+display: block;
+padding: 10px 15px;
+margin: 0;
+}
+
+
+
+
+
+
+.dropdown .contenido{
+  display: none;
+  background-color:white;
+  position: absolute;
+  min-width: 100px;
+  box-shadow: 2px 2px 5px hsla(0, 0%,0%, 0.8);
+
+
+
+}
+
+.dropdown:hover .contenido{
+  display: block;
+
+  
+
+}
+
+nav p:hover{
+  /* background-color: #fdd306; */
+  border-radius: 4px;
+
+}
+
+
+nav ul li {
+  display: flex; /* Alineación en el centro de cada <li> */
+  align-items: center;
+  color:var(--texto);
+}
+
+nav ul li a {
+  color: var(--bgGeneral);
+  text-decoration: none;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+
+nav ul li a:hover {
+  /* background-color:#fdd306; */
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
