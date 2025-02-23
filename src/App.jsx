@@ -271,18 +271,7 @@ function getLocalidades(){
     <nav>
         <ul>
             
-               {/*  <li><div className="dropdown"><p>Catálogo</p>
-                    <div className="contenido"> 
-                        <a href="mujeres.html">Indumentaria Femenina</a>
-                        <a href="hombres.html">Indumentaria Masculina</a>
-                        <a href="electronics.html">Tecnologia</a>
-                        <a href="joyeria.html">Joyería</a>
-                       
-                    </div> 
-    
-                    
-    
-                    </div></li>     */}
+               
            
                <li><div className="dropdown"><p>Elegí una zona</p>
                 <div className="contenido">
