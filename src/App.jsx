@@ -660,7 +660,7 @@ function clickDire(){
        </Card>
        )}
        
-       <footer> 2024 - Curiosibit</footer>
+       <footer> 2025 - Curiosibit - https://curiosibit.blogspot.com/</footer>
       </div>
 
      

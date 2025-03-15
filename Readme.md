@@ -8,7 +8,7 @@ Es un proyecto desarrollado en React y hosteado en Vercel, que consume informaci
 Para ello desarrollé unas herrmientas en Python que permiten consultar y generar,los archivos mencionados, ya que es necesario  actualizarlos con cierta regularidad.
 
 ## A futuro
-- Lo más próximo va a ser un update para que los usuarios puedan ingresar una dirección específica y así obtener un listado ordenado por distancia de las estaciones disponibles.
+- ~~Lo más próximo va a ser un update para que los usuarios puedan ingresar una dirección específica y así obtener un listado ordenado por distancia de las estaciones disponibles~~. realizado
   [Ejemplo de otros de mis proyectos](https://dondeba.vercel.app/)
 - En breve quiero agregar una feature que permita elegir un tipo de combustible y genere un tabla para que sea un forma más eficiente para evaluar la relación precio/distancia
 - Mi idea a futuro es escalar a todo el pais. Decidí comenzar con una muestra para comenzar la pruebas.
