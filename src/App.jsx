@@ -289,9 +289,7 @@ const crearDirecciones = (data) => {
 
 
     function clickDireccion(zona){
-      alert("Por el momento esta funcionalidad no esta disponible debido a la caida de la API del Servicio de Normalización de Datos Geográficos de Argentina, gracias por su comprensión")
- 
-      /* BLOQUEADO POR EL MOMENTO NO ESTA FUNCIONANDO LA API
+     
       setEstaciones([]);
       setForm([])
  
@@ -344,7 +342,7 @@ const crearDirecciones = (data) => {
               });
 
 
-    } */
+    }
 
    //console.log('p',data,localidades)
    
