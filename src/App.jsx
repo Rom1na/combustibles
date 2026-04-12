@@ -44,11 +44,47 @@ function App() {
 const nombresBarrios = Barrios.map(barrioObj => barrioObj.barrio);
 
 const crearDirecciones = (data) => {
+  // Un valor de 0.002 es un zoom urbano equilibrado (aprox. 3-4 cuadras a la redonda)
+  const DELTA = 0.002; 
+
+  const direcciones = data.direcciones.map((direccion) => {
+    const { lat, lon } = direccion.ubicacion;
+
+    // Calculamos los límites de la "caja" (Bounding Box)
+    const minLon = lon - DELTA;
+    const minLat = lat - DELTA;
+    const maxLon = lon + DELTA;
+    const maxLat = lat + DELTA;
+
+    return {
+      nomenclatura: direccion.nomenclatura,
+      lat: lat,
+      lon: lon,
+      // Corregí también la URL de Google para que sea funcional si la usás
+      url: `https://www.google.com/maps?q=${lat},${lon}`,
+      // Aplicamos el bbox calculado para el zoom correcto en OSM
+      urlOSM: `https://www.openstreetmap.org/export/embed.html?bbox=${minLon}%2C${minLat}%2C${maxLon}%2C${maxLat}&layer=mapnik&marker=${lat}%2C${lon}`,
+    };
+  });
+
+  return direcciones;
+};
+
+
+
+
+
+
+
+/* const crearDirecciones = (data) => {
+  
 
   const direcciones = data.direcciones.map((direccion)=>({
     nomenclatura : direccion.nomenclatura,
     lat: direccion.ubicacion.lat,
     lon: direccion.ubicacion.lon,
+
+    
     url : `https://maps.google.com?q=${direccion.ubicacion.lat},${direccion.ubicacion.lon}`,
     urlOSM:`https://www.openstreetmap.org/export/embed.html?bbox=${direccion.ubicacion.lon}%2C${direccion.ubicacion.lat}%2C${direccion.ubicacion.lon}%2C${direccion.ubicacion.lat}&amp;layer=mapnik&amp&marker=${direccion.ubicacion.lat}%2C${direccion.ubicacion.lon}`,
   }));
@@ -57,7 +93,7 @@ const crearDirecciones = (data) => {
   return direcciones; 
 
 
-};
+}; */
 
 
 
